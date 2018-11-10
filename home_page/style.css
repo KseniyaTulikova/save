@@ -1,0 +1,800 @@
+body {
+	font-family: 'Sintony', sans-serif;
+}
+
+header {
+	width: 100%;
+	background: #fff;
+	display: flex;
+	margin: 0 auto;
+}
+.content {
+	display: flex;
+	width: 1290px;
+	margin: 0 auto;
+}
+
+.header_logo img {
+	width: 220px;
+	height: 40px;
+	margin: 43px 0;
+}
+
+.topnav {
+	margin: 38px 0 38px 90px;
+}
+
+.topnav > a {
+	text-decoration: none;
+	flex-wrap: nowrap;
+	color: #2c465a;
+	margin-right: 30px;
+	font: normal bold 14px 'Sintony', sans-serif;
+	
+}
+.button {
+	display: inline-block;
+	border: 2px solid #fea100;
+	border-radius: 10px;
+}
+
+.topnav #my_plate {
+	font: normal bold 14px 'Sintony', sans-serif;
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 10px;
+	color: #fff;
+	background: #fea100;
+	height: 47px;
+	box-sizing: border-box;
+	border: 1px solid #ffff;
+	border-radius: 10px;
+	animation: pulsate 1.2s linear infinite;
+}
+#my_table:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+/*При нажатии кнопки появляется тень*/
+#my_table:active {
+  top: 1px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+/*Добавляем анимацию пульсации в тексту нашей кнопки*/
+@keyframes pulsate {
+  50% {
+  	color: #fff; 
+  	text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+  	}
+}
+
+.plate {
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+.purple {
+	color: #fe4c8d;
+}
+
+
+
+#menu {
+	display:none;
+}
+
+/*Код ля баннера хидер и бэкграунд*/
+main span {
+	color: #fea100;
+}
+/*Пишем код для main_section_banner*/
+.main_section_banner {
+	background-image: url(../img/background_header.jpg);
+	background-size: cover;
+	height: 570px;
+	/*opacity: 0.5;*/
+	position: relative;
+}
+
+.main_section_banner img {
+	position: absolute;
+	top:  -107px;
+	left: 1273px;
+}
+
+.main_section_banner .main_header {
+	position: absolute;
+	margin: 24px 0;
+	top: 30%;
+	left: 50%;
+}
+
+.main_section_banner .main_header > h1 {
+	font: normal bold 56px 'PlayfairDisplay', sans-serif;
+	color: #fff;
+}
+
+.main_section_banner .main_header > h2 {
+	font: normal bold 40px 'PlayfairDisplay', sans-serif;
+	color: #fff;
+}
+
+
+
+/*Код телефона доставки и ревью*/
+.main_section_delivery {
+	background-color: #edf1f3;
+}
+.main_delivery_info {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.main_delivery_info > div {
+	display: flex;
+	justify-content: flex-start;
+	margin: 25px 0;
+}
+
+.main_delivery_info  h3 {
+	margin-right: 18px;
+	text-transform: uppercase;
+	color: #14141d;
+	font: normal bold 14px/20px 'Sintony', sans-serif;
+}
+
+.main_delivery_info > .main_review {
+	margin-right: 70px;
+}
+
+.main_delivery_info > .main_review > i {
+	font-size: 35px;
+	margin-right: 11px;
+}
+
+.main_delivery_info > .main_review > .button_comments {
+	width: 39px;
+	height: 39px;
+	border-radius: 19px;
+	border: 1px solid #fea100;
+}
+
+.main_delivery_info > .main_review > .button_comments > button {
+	border-radius: 50%;
+	background: #fea100;
+	border: 1px solid #fff;
+	width: 39px;
+	height: 39px;	
+}
+
+
+.main_delivery_info > .main_calls {
+	margin-right: 45px;
+}
+
+.main_delivery_info > .main_calls > i {
+	font-size: 35px;
+	margin-right: 18px;
+}
+
+
+.main_delivery_info > .main_number {
+	padding: 8px;
+}
+
+.main_delivery_info > .main_number > h3 {
+	font: normal bold 27px/18px 'PlayfairDisplay', sans-serif;
+}
+
+/*Пишем код для about_restarant*/
+.main_about_restarant {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 370px;
+	padding:  32px 0 95px 0; 
+}
+.main_about_restarant > .restarant_info {
+	width: 50%;
+}
+
+.main_about_restarant > .restarant_info {
+	display: flex;
+	flex-direction: column;
+	margin-top: 65px;
+}
+
+.main_about_restarant > .restarant_info > .about_paragraph > h2 {
+	color: #14141d;
+	font: normal bold 35px/22px 'Playfair Display', sans-serif;
+	margin: 48px 0 40px 0;
+}
+.main_about_restarant > .restarant_info > .about_paragraph > p {
+	width: 548px;
+	height: 137px;
+	color: #5c6369;
+	font: normal bold 14px/26px 'Sintony', sans-serif;
+}
+
+.main_about_restarant > .restarant_info > .read_more > button {
+	width: 148px;
+	height: 50px;
+	background: #fea100;
+	border-radius: 4px;
+	border: none;
+	font: normal bold 14px/30px 'Sintony', sans-serif;
+	color: #ffffff;
+	letter-spacing: 0px;
+}
+
+.main_about_restarant > .restarant_info > .read_more > img {
+	width: 236px;
+	height: 71px;
+	margin-left: 52px;
+}
+
+
+.main_about_restarant > .restarant_images {
+	display: flex;
+	justify-content: start;
+	
+}
+.main_about_restarant > .restarant_images > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.main_about_restarant > .restarant_images > div:first-child {
+ 	margin-top: 65px;
+}
+
+.main_about_restarant > .restarant_images img {
+	width: 270px;
+	height: 150px;
+}
+.main_about_restarant > .restarant_images  img:first-child {
+	margin: 0 12px 12px 0;
+}
+
+/*Код для Today special*/
+
+.main_section_special {
+	background-image: url(../img/background_special.jpg);
+	background-size: cover;
+	height: 440px;
+	width: 100%;
+	position: relative;
+}
+/*Прописали затемнение*/
+/*.main_section_special:before{
+  	content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}*/
+
+.main_section_special > .content {
+	position: relative;
+}
+.main_section_special > .content > .main_special {
+	position: absolute;
+	top: 105px;
+	left: 645px;
+	margin-left: -103.5px;
+	margin-top: -40.5px;
+	display: block;
+	font: normal bold 35px/22px 'PlayfairDisplay', sans-serif;
+	color: #ffffff;
+}
+
+.main_section_special > .content > .special_info {
+	position: absolute;
+	margin: 0 auto;
+	top: 142px; 
+	display: flex;
+	width: 100%; 
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+/*.main_section_special > .content > .special_info div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} */
+
+.main_section_special > .content > .special_info img {
+	width: 569px;
+	height: 420px;
+} 
+.main_section_special > .content > .special_info div > div:first-of-type {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin: 51px 0 61px 0;
+}
+
+.main_section_special > .content > .special_info div > h2{
+	font: normal bold 26px/22px 'PlayfairDisplay', sans-serif;
+	color: #14141d;
+	margin-bottom: 23px;
+	
+}
+
+.main_section_special > .content > .special_info div > p {
+	font: normal bold 14px/26px 'Sintony', sans-serif;
+	display: block;
+	width: 475px;
+	height: 76px;
+	color: #5c6369;
+	font-family: "Sintony";
+}
+.main_section_special > .content > .special_info hr{
+	width: 473px;
+	background-color: #e1e1e1;
+	border: 3px solid #e1e1e1;
+}
+.main_section_special > .content > .special_info > div > div.special_detailes {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 485px;
+	height: 70px;
+	box-sizing: border-box;
+	margin: 27px 44px 4px 44px ;
+}
+
+.main_section_special > .content > .special_info > div > .special_detailes h3:first-child {
+	font: normal bold 13px/17px 'Sintony', sans-serif;
+	color: #14141d;
+	text-transform: uppercase;
+}
+
+.main_section_special > .content > .special_info > div > .special_detailes h3:nth-child(2) {
+	font: normal bold 26px/22px 'PlayfairDisplay', sans-serif;
+	color: #14141d;
+}
+
+.main_section_special > .content > .special_info > div > .special_detailes h3:last-child {
+	font: normal bold 30px/22px 'PlayfairDisplay', sans-serif;
+	color: #fea100;
+}
+
+
+/*Пишем код для меню*/
+/*1. Код для main_menu_header*/
+.main_section_menu {
+	margin-top: 545px;
+}
+
+.main_section_menu  .main_menu_header {
+	padding-bottom: 30px; 
+}
+
+.main_section_menu  .main_menu_header h2{
+	display:block;
+	margin: 0 auto;
+	font: normal bold 35px/22px 'PlayfairDisplay', sans-serif;
+	color: #14141d;
+}
+/*2. Код для list_menu*/
+.main_section_menu .menu {
+	width: 100%;
+	border-top: 3px dotted #a3b0ba;
+	border-bottom: 3px dotted #a3b0ba;
+	padding: 10px 0; 
+}
+
+.main_section_menu .menu_types > .list_menu {
+	margin: 0 auto;
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+.main_section_menu .menu_types > .list_menu > li > a {
+	text-decoration: none;
+	font: bold 20px/22px 'PlayfairDisplay', serif;
+	color: #14141d;
+
+}
+
+
+/*3. Код для main_dish*/
+.main_section_menu .main_dish_list .main_offer {
+  	margin: 0 auto;
+ 	width: 90%;
+ 	padding-top: 32px;
+ 	display: flex;
+ 	justify-content: space-between; 
+ 	flex-wrap: wrap;
+ }
+
+.main_section_menu .main_dish_list .main_dish {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin-top: 24px; 
+	padding-bottom: 30px;
+	border-bottom: 3px solid #eeeeee;
+} 
+
+.main_section_menu .main_dish_list .main_dish > .main_dish_info h3 {
+	text-transform: uppercase;
+	font: normal bold 16px/17px 'Sintony', sans-serif;
+	color: #14141d;	
+} 
+
+.main_section_menu .main_dish_list .main_dish > .main_dish_info p {
+	font: normal normal 14px/26px 'Sintony', sans-serif;
+	color: #5c6369;	
+} 
+
+.main_section_menu .main_dish_list .main_dish > div:last-child h3{
+ 	font: normal bold 26px/22px 'PlayfairDisplay', serif;
+	color: #fea100;
+ }
+
+
+/* Пишем код для кнопки в секции main_dish*/
+
+.main_section_menu .main_restarant_menu_explore {
+	padding: 25px 0 100px 0;
+}
+
+.main_section_menu .button_info {
+	margin: 0 auto;
+}
+.main_section_menu .button_food  {
+	box-sizing: border-box;
+	padding: 5px 10px;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: #fea100;
+	border: 1px solid #fea100;
+}
+
+.main_section_menu .button_food > h3 {
+	font: normal bold 14px/30px 'Sintony', sans-serif;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase; 
+}
+
+/*Пишем код для Reviews и happy clients*/
+
+.main_section_reviews {
+	/*background-color: #ef118b;
+	background-image: linear-gradient(225deg, #ef118b 0%, #784BA0 50%, #2B86C5 100%);*/
+	background-color: #f3c628;
+background-image: linear-gradient(45deg, #f3c628 0%, #c82f9a 100%);
+
+
+}
+
+.main_section_reviews .full_review {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 90px auto;
+}
+
+.main_section_reviews .full_review > .happy_clients > h2{
+	font: normal bold 35px/22px 'PlayfairDisplay', serif;
+	color: #ffffff;
+	margin-bottom: 26px;
+	text-align: center;
+}
+
+.main_section_reviews .full_review > .happy_clients > p{
+	font: normal bold 15px/26px 'Sintony', sans-serif;
+	width: 772px;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.main_section_reviews .full_review .clients_info > .image_of_client  {
+	margin: 0 auto;
+	width: 67px;
+	height: 67px;
+	border-radius: 34px;
+	box-shadow: 2.5px 4.33px 5px rgba(0,0,0,0.24);
+	background-color: #fffaf1;
+	border: 3px solid #ffffff;
+}
+.main_section_reviews .full_review > .clients_info > .image_of_client img {
+	position: ;
+	-webkit-clip-path: circle(38px at 50% 50%);
+	    margin-left: -27px;
+	    margin-top: -8px;
+}
+
+.main_section_reviews .full_review > .clients_info > h3{
+	font: normal bold 16px/17px 'Sintony', sans-serif;
+	color: #fffaf1;
+	margin: 16px 0 8px 0;
+	text-transform: uppercase;
+}
+ 
+.main_section_reviews .full_review > .clients_info > .stars{
+
+	font-size: 14px;
+	letter-spacing: 3px;
+	line-height: 17px;
+	color: #fff221;
+	text-align: center;
+}
+
+
+/*Пишем код для .main_section_reservation*/
+.main_section_reservation{
+	background-color: #edf1f3;
+}
+
+.main_section_reservation .content {
+	flex-direction: column;
+}
+
+.main_section_reservation .header_reservation {
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+
+.main_section_reservation .header_reservation > h2 {
+	font: normal bold 35px/22px 'PlayfairDisplay', serif;
+	color: #14141d;
+
+}
+
+.main_section_reservation .full_reservation {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 96px;
+}
+
+.main_section_reservation .full_reservation img {
+	width: 45%;
+}
+
+.main_section_reservation .full_reservation > .reservation_info {
+	width: 45%;
+	margin: 45px 0 24px 0;
+	
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation  {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.main_section_reservation .full_reservation > .reservation_info > .reservation > input {
+	width: 47%;
+	height: 40px;
+	margin-bottom: 14px;
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation_datailes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation_datailes > button {
+	box-sizing: border-box;
+	padding: 5px 10px;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: #fea100;
+	border: 1px solid #fea100;
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation_datailes > button > h3{
+	font: normal bold 14px/30px 'Sintony', sans-serif;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-transform: uppercase; 
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation_datailes > h3.call_us {
+	font: normal bolder 13px/17px 'Sintony', sans-serif;
+	color: #14141d;
+	text-transform: uppercase;
+	margin-top: 13px;
+	border-right:  3px solid #c7d1d6;
+	padding-right: 18px;
+
+}
+
+.main_section_reservation .full_reservation > .reservation_info > .reservation_datailes > h3:last-child {
+	font: normal bold 24px/22px 'PlayfairDisplay', serif;
+	color: #14141d;
+	margin-top: 18px;
+	margin-right: 8px;
+}
+
+
+/*Пишем код для footer*/
+
+footer > section {
+	background-color: #373844;
+}
+
+footer  .content {
+	justify-content: space-between;	
+	padding: 100px 0;
+}
+
+footer .content  h2 {
+	font: normal bold 24px/22px 'PlayfairDisplay', serif;
+	color: #ffffff;
+	margin-bottom: 38px;
+}
+
+footer .content > .footer_navigation > ul > li {
+	list-style-type: none;
+}
+
+footer .content > .footer_navigation > ul > li > a {
+	text-decoration: none;
+	font: normal normal 14px/30px 'Sintony', sans-serif;
+	letter-spacing: 0px;
+	color: #adb2b7;
+	margin-bottom: 18px;
+}
+
+footer .content > .footer_info > p {
+	font: normal normal 14px/26px 'Sintony', sans-serif;
+	width: 464px;
+	height: 20px;
+	color: #adb2b7;
+	margin-bottom: 15px;
+}
+
+footer .footer_info > .input_with_icon {
+	position: relative;
+}
+
+footer .footer_info input {
+	width: 311px;
+	padding: 15px 0 15px 46px;
+	border-radius: 4px;
+	background-color: #23232c;
+	border: 2px solid #52535e;
+	transition: .3s;
+	box-sizing: border-box;
+}
+
+
+footer .footer_info input:focus {
+	border-color: #fea100;
+	box-shadow: 0 0 8px 0 #fea100;
+}
+
+footer .footer_info > .input_with_icon > i {
+	position: absolute;
+	left: 5px; 
+	top: 4px; 
+	padding: 10px 9px;
+	font-size: 21px;
+	line-height: 26px;
+	color: #fea100;
+	transition: .3s;
+}
+
+footer .footer_info input:focus + i {
+	box-shadow: 0 0 8px 0 #fea100;
+}
+footer .footer_info > .input_with_icon > button {
+	width: 149px;
+	height: 51px;
+	border-radius: 4px;
+	background-color: #fea100;
+	border: 1px solid #fea100;
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+footer .footer_info > .input_with_icon > button > h3{
+	font: normal bold 14px/30px 'Sintony', sans-serif;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+footer .footer_apps div {
+	display: flex;
+	flex-direction: column; 
+}
+
+footer .footer_apps img {
+	width: 219px;
+	height: 61px;
+	margin-bottom: 14px;
+}
+
+footer .footer_apps img > a {
+	text-decoration: none;
+}
+
+footer .footer_links > ul {
+	list-style-type: none;
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+
+footer .footer_links {
+	margin-top: 35px;
+}
+
+footer .footer_links > ul > li {
+	display: inline-block;
+	background: url(../img/apps.jpg) no-repeat;
+	width: 60px;
+	height: 60px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+footer .footer_links > ul > li.link_first {
+	background-position: -20px -14px;
+}
+
+footer .footer_links > ul > li.link_second {
+	background-position: -97px -95px;
+}
+footer .footer_links > ul > li.link_third {
+	background-position: -20px -95px;
+}
+
+footer .footer_links > ul > li > a {
+	display: block;  
+    width: 100%;  
+    height: 100%; 
+}
+
+/*Код для авторских прав в footer*/
+footer > section > .content.authors_rights {
+	padding: 0 0 68px 0;
+}
+
+footer > section > .authors_rights  hr.line {
+	width: 32%;
+	height: 1px;
+	border: 0.25px solid #52535e;
+}
+
+footer > section > .authors_rights > div > h3 {
+	width: 100%;
+	text-align: center;
+	font: normal normal 13px/26px 'Sintony', sans-serif; 
+	letter-spacing: 1px;
+	color: #adb2b7;
+	text-transform: uppercase;
+	margin-top: -4px;
+}
+
+footer > section > .authors_rights > div > h3 > span {
+	font: normal bold 13px/26px 'Sintony', sans-serif; 
+	}
+
+
+
+
+
+
+
+
+
+
+
+
